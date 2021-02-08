@@ -205,6 +205,16 @@ ul.clist > li:before {
     z-index: 400;
 }
 
+/* button
+-----------------------------------------------------*/
+button.navbutton {
+	background-color:transparent;  
+	border:none; 
+	color:white; 
+	outline-style:none;
+}
+
+
 /* timelinelist
 -----------------------------------------------------*/
 
