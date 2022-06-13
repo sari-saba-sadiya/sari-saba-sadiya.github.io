@@ -44,27 +44,20 @@
                 <a class="nav-link">Publications</a>
                 </button>
               </li>
+              <!--
               <li class="nav-item">
-				<!--
-                <a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
-                -->
                 <button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('projects').id)">
                 <a class="nav-link">Projects</a>
                 </button>
               </li>
+              -->
               <li class="nav-item">
-				<!--
-                <a class="nav-link" href="#teach">Teaching</a>
-                -->
                 <button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('teach').id)">
                 <a class="nav-link">Teaching</a>
                 </button>
               </li>
               <li class="nav-item">
-				<!--
-				<a class="nav-link" href="#education">Education, Experience, and Awards</a>
-				-->
-			    <button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('education').id)">
+		 <button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('education').id)">
                 <a class="nav-link">Education, Experience, and Awards</a>
                 </button>               
             </ul>
@@ -77,14 +70,14 @@
         </div>
     	</nav>
     	<script>
-		function onClickFunction(ID) {
-		  var el_list = ["Academic", "projects", "teach", "education"];
-		  el_list.forEach(el => {
-			document.getElementById(el).style.display = "none";
-		  });
-		  document.getElementById(ID).style.display = "block";
-		}
-		</script>
+	function onClickFunction(ID) {
+	  var el_list = ["Academic", "projects", "teach", "education"];
+	  el_list.forEach(el => {
+		document.getElementById(el).style.display = "none";
+	  });
+	  document.getElementById(ID).style.display = "block";
+	}
+	</script>
     </header>
 
     <!-- Begin page content -->
@@ -141,7 +134,7 @@ href="https://psychology.msu.edu/programs/cognition-and-cognitive-neuroscience/i
       <!--- Sari Hello--->
       <div class="col-8">
 	   <section id="intro" class="mt-5">
-        	<h3 class="display-5">/~sadiyasa/ index</h3>
+        	<h3 class="display-5">About</h3>
 			<p>
 			I am a final semester graduate student pursuing a dual Ph.D in computer science under Dr Mohammad Ghassemi, and cognitive neuroscience under Dr Taosheng Liu. I earned Bachelors in both Computer Science and Mathematics from the "Technion - Israel Institute of Technology" and subsequently worked as a VLSI engineer at Apple Inc. before becoming a Fulbright grantee in MSU.
 			</p>
@@ -155,7 +148,7 @@ href="https://psychology.msu.edu/programs/cognition-and-cognitive-neuroscience/i
 
 
         <section id="Academic" class="mt-5">
-          <h3 class="display-5">Selected Publications</h3><hr>
+          <h3 class="display-5">Publications</h3><hr>
 
 	<div class="row myPub">
 		<div class="col-md-8">
@@ -249,7 +242,7 @@ href="https://psychology.msu.edu/programs/cognition-and-cognitive-neuroscience/i
       <!--
       <div class="col-8">
       -->
-        <section id="projects" class="mt-5">
+        <section id="projects" class="mt-5" style="display:none;">
           <h3 class="display-5">Projects</h3><hr>
           <ul class="timelinelist">
             <li><a href="https://arxiv.org/abs/1909.06907"> Multi-modal Learning and Explanation in Human Robot Interaction </a> <span class="badge badge-primary">Python, C++</span> - funded by the DARPA SIMPLEX program and the DARPA XAI project.</li>
@@ -257,7 +250,7 @@ href="https://psychology.msu.edu/programs/cognition-and-cognitive-neuroscience/i
           </ul>
         </section>
         
-        <section id="teach" class="mt-5">
+        <section id="teach" class="mt-5" style="display:none;">
           <h3 class="display-5">Teaching</h3>
           <hr>
           <ul class="clist">
@@ -304,7 +297,7 @@ href="https://psychology.msu.edu/programs/cognition-and-cognitive-neuroscience/i
         </section>
         <br>
 -->
-        <section id="education" class="mt-5">
+        <section id="education" class="mt-5" style="display:none;">
           <h3 class="display-5">Education, Experience, and Awards</h3>
           <hr>
           <ul class="timeline">
@@ -436,17 +429,19 @@ href="https://psychology.msu.edu/programs/cognition-and-cognitive-neuroscience/i
     <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!--
     <script src="js/bibtex.js"></script>
-<script type="text/javascript">
- var init = function() {
-   bibtexify("#bibtex", "pubTable", {});
- };
- if (window.addEventListener) {
-   window.addEventListener('load', init, false);
- } else if (window.attachEvent) {
-   window.attachEvent('onload', init);
- }
-</script>
+	<script type="text/javascript">
+	 var init = function() {
+	   bibtexify("#bibtex", "pubTable", {});
+	 };
+	 if (window.addEventListener) {
+	   window.addEventListener('load', init, false);
+	 } else if (window.attachEvent) {
+	   window.attachEvent('onload', init);
+	 }
+	</script>
+    -->
 <script>
 jQuery("#pubTable").on("click", "a", function(e) {
   var $n = jQuery(this),

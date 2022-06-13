@@ -132,10 +132,10 @@ div.bibinfo pre { clear:both; }
 }
 
 .nav-link {
-  color: #fff;
+  color:   #ba4a00;
 }
 .nav-link:hover{
-  color: #ffa8d5;
+  color:  #8e44ad;
 }
 
 a {
@@ -212,6 +212,10 @@ button.navbutton {
 	border:none; 
 	color:white; 
 	outline-style:none;
+}
+
+button.navbutton:hover {
+	color:#ce6cab; 
 }
 
 
