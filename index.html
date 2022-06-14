@@ -34,15 +34,17 @@
           -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i></button>
-    		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-			  <li class="nav-item">
-				<!--
-                <a class="nav-link" href="#Academic">Publications</a>
-                -->
-                <button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('Academic').id)">
-                <a class="nav-link">Publications</a>
-                </button>
+    	       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+	        <li class="nav-item">
+			<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('intro').id)">
+			<a class="nav-link">About</a>
+			</button>
+               </li>
+	        <li class="nav-item">
+			<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('Academic').id)">
+			<a class="nav-link">Publications</a>
+			</button>
               </li>
               <!--
               <li class="nav-item">
@@ -71,7 +73,7 @@
     	</nav>
     	<script>
 	function onClickFunction(ID) {
-	  var el_list = ["Academic", "projects", "teach", "education"];
+	  var el_list = ["intro", "Academic", "projects", "teach", "education"];
 	  el_list.forEach(el => {
 		document.getElementById(el).style.display = "none";
 	  });
@@ -144,10 +146,49 @@ href="https://psychology.msu.edu/programs/cognition-and-cognitive-neuroscience/i
 			<p>
 			I spend the little free time I have learning to play various instruments to various degrees of success.
 			</p>
+		<hr>
+		<h3 class="display-5">Recent Projects:</h3>
+		<div class="row">
+			<div class="col-md-8">
+				<h5 style="font-weight:bold;">Feature Imitating Networks</h5>
+				<p>
+				Novel framework for integrating expert knowledge into deep learning networks by initalizing weights to approximate known statistical measures. 
+				</p>
+				<b>Papers:</b>
+				<ul>
+				<li><p><a class="venue" target="_blank"><i>Feature Imitating Networks</i> In Proceedings of the 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</a>, 2022<br/>
+				    S. Saba-Sadiya and T. Alhanai and T. Liu and M. Ghassemi
+				[<a href="https://arxiv.org/abs/2110.04831" target='_blank'>pdf</a>] [<a href="https://dblp.uni-trier.de/rec/journals/corr/abs-2110-04831.html?view=bibtex" target='_blank'>bib</a>] [<a href="https://github.com/sari-saba-sadiya/Feature-Imitating-Networks" target='_blank'>code</a>]</p></li><ul>
+			</div>
+			<div class="col-md-4">
+			    <iframe id="ICASSP22" class="img-fluid rounded mb-3 mb-md-0" src="https://www.youtube.com/embed/TY_-wGrt3lM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<h5 style="font-weight:bold;">Artifact Detection and Correction in EEG Data</h5>
+				<p>
+				Applying state-of-the-art self-supervised machine learning techniques to artifact detection and correction in EEG data. 
+				</p>
+				<b>Papers:</b>
+				<ul>	
+				<li><p><a class="venue" target="_blank"><i>Unsupervised EEG Artifact Detection and Correction</i> In Frontiers in Digital Health, Special issue on Machine Learning in Clinical Decision-Making. Volume 2</a>, 2020<br/>
+			    S. Saba-Sadiya and E. Chantland and T. Alhanai and T. Liu and M. Ghassemi
+			[<a href="https://www.frontiersin.org/articles/10.3389/fdgth.2020.608920/full" target='_blank'>pdf</a>] [<a href="https://www.frontiersin.org/articles/10.3389/fdgth.2020.608920/bibTex" target='_blank'>bib</a>] [<a href="https://github.com/sari-saba-sadiya/EEGExtract" target='_blank'>code</a>]</p></li>
+				<li><p><a class="venue" target="_blank"><i>EEG Channel Interpolation Using Deep Encoder-Decoder Networks</i> In Proceedings of the 2020 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</a>, 2020<br/>
+                    S. Saba-Sadiya and T. Alhanai and T. Liu and M. Ghassemi
+                [<a href="https://arxiv.org/abs/2009.12244" target='_blank'>pdf</a>] [<a href="https://rb.gy/6o9fp1" target='_blank'>bib</a>] [<a href="https://github.com/sari-saba-sadiya/EEG-Channel-Interpolation-Using-Deep-Encoder-decoder-Networks" target='_blank'>code</a>]</p></li>
+			    	</ul>
+			</div>
+		    <div class="col-md-4">
+		    <iframe id="BIBM2020" class="img-fluid rounded mb-3 mb-md-0" src="https://www.youtube.com/embed/jLRZeJg5viM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    </div>
+		</div>
+		
         </section>
 
 
-        <section id="Academic" class="mt-5">
+        <section id="Academic" class="mt-5" style="display:none;">
           <h3 class="display-5">Publications</h3>
           For a complete list see my <a href="https://scholar.google.com/citations?user=pw_84v0AAAAJ">google scholar page</a>.
 	<hr>
@@ -184,7 +225,7 @@ href="https://psychology.msu.edu/programs/cognition-and-cognitive-neuroscience/i
         </div>
         <hr>
 		<div class="row myPub">
-			<div class="col-md-8">
+		<div class="col-md-8">
                 <h5>EEG Channel Interpolation Using Deep Encoder-Decoder Networks</h5>
                 <p><a class="venue" target="_blank">In Proceedings of the 2020 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</a>, 2020<br/>
                     S. Saba-Sadiya and T. Alhanai and T. Liu and M. Ghassemi</p>
