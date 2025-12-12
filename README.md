@@ -7,7 +7,7 @@ the dependencies.
 
 ## Live demo
 
-I have used this style for my [personal webpage](https://cse.msu.edu/~sadiyasa/)
+I have used this style for my [personal webpage](https://sari-saba-sadiya.github.io/)
 
 ## Basic changes
 
